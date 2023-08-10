@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokes Not Apart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar pd-30">
+            <div class="logo">
+                <img src="/images/jokeLogo.png" alt="logo">
+                <span>Humor <br> BING</span>
+            </div>
+            <div class="typeOfJokes">
+                <a href="/">RANDOM</a>
+                <a href="/search">CHOOSE</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pd-30 box">
+        <%if(locals.search){ %>
+            <form action="/search" method="post" class="choose">
+
+                <label for="">Keyword:</label>
+                <input type="text" name="keywords" placeholder="ex: horse,man,etc">
+    
+                <label for="">Tags:</label>
+                <input type="text" name="include-tags" placeholder="ex: pun,dark,etc">
+    
+                <label for="">Don't Want:</label>
+                <input type="text" name="exclude-tags" placeholder="ex: religious,racist,etc">
+    
+                <div class="submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        <% } %>
+       
+        <% if(locals.content){ %>
+            <div class="jokeBody">
+                <h1><img src="/images/jokeLogo.png" alt="logo"></h1>
+                <p><%= content %></p>
+                
+            </div>
+       <%  } %>
+        
+    </main>
+
+    <footer>
+        Copyright © 2023
+    </footer>
+</body>
+
+
+</html>

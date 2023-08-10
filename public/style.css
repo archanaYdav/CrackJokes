@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.navbar{
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(134, 141, 156, 0.6);
+    margin-bottom: 25px;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    margin-right: 10px;
+    height: 40px;
+}
+
+.logo span{
+    font-weight: 900;
+    color:rgba(0, 0, 0, 0.582);
+    font-size: 14px;
+    line-height: 1.1;
+}
+
+.typeOfJokes a{
+    color: #637790;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+a:hover{
+    color: #d0392a;
+}
+
+.pd-30{
+    padding: 0 30px;
+
+}
+
+.choose{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 5px solid rgba(0, 0, 0, 0.582);
+    padding: 10px;
+}
+
+.box{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 90vh;
+    margin-left: 20px
+}
+
+.submit{
+    margin-top: 10px;
+    background-color: #637790a6;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.submit input{
+    font-size: 16px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+form *{
+    color: rgba(0, 0, 0, 0.7);
+    margin: 5px;
+}
+
+input{
+    color: black;
+    padding: 5px;
+}
+
+.jokeBody{
+    flex-direction: column;
+    flex: 1;
+    border-radius: 7%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    background-size: cover;
+    background-image: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)), url(images/4912917.jpg);
+    margin: 30px;
+    padding: 100px;
+}
+
+.jokeBody p{
+    font-size: 1.3em;
+    color: rgba(0, 0, 0, 0.7);
+    width: 600px;
+    line-height: 1.5;
+}
+
+h1{
+    margin-bottom: 25px;
+}
+
+h1 img{
+    height: 55px;
+}
+
+footer{
+    font-size: 17px;
+    padding: 18px;
+    background-color: rgba(0, 0, 0, 0.158);
+    color: rgba(0, 0, 0, 0.73);
+    text-align: center;
+    margin-top: 25px;
+}
+
